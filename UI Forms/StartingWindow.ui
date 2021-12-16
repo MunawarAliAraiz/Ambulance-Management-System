@@ -70,7 +70,7 @@
       <set>Qt::AlignCenter</set>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton">
+    <widget class="QPushButton" name="emergencyBtn">
      <property name="geometry">
       <rect>
        <x>380</x>
@@ -89,7 +89,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:1, stop:0.
       <string>Emergency</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_2">
+    <widget class="QPushButton" name="loginBtn">
      <property name="geometry">
       <rect>
        <x>380</x>

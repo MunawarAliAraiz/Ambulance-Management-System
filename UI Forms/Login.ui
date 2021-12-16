@@ -90,7 +90,7 @@ border-radius:16px;
      <property name="frameShadow">
       <enum>QFrame::Raised</enum>
      </property>
-     <widget class="QPushButton" name="pushButton_2">
+     <widget class="QPushButton" name="loginBtn">
       <property name="geometry">
        <rect>
         <x>200</x>
@@ -237,7 +237,7 @@ border: 1px solid #000000
       </property>
      </widget>
     </widget>
-    <widget class="QPushButton" name="pushButton_3">
+    <widget class="QPushButton" name="backBtn">
      <property name="geometry">
       <rect>
        <x>790</x>
@@ -257,7 +257,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
       <string>Back</string>
      </property>
     </widget>
-    <widget class="QPushButton" name="pushButton_4">
+    <widget class="QPushButton" name="exitBtn">
      <property name="geometry">
       <rect>
        <x>30</x>
