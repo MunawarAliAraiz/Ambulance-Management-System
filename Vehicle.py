@@ -17,11 +17,3 @@ class Vehicle:
         self.type=x  
     def gettype(self):
         return self.type
-
-    def AddVehicle(x):
-
-    def DeleteVehicle(x):
-
-    def UpdateVehicle(x,y):
-
-    def ViewVehicle():

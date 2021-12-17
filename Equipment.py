@@ -29,11 +29,3 @@ class Equipment:
         self.price=x   
     def getprice(self):
         return self.price
-
-    def AddEquipment(x):
-
-    def DeleteEquipment(x):
-
-    def UpdateEquipment(x,y):
-
-    def ViewEquipment():
