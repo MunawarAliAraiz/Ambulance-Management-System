@@ -38,6 +38,7 @@ class Ui(QtWidgets.QMainWindow):
          super(Ui, self).__init__()
          uic.loadUi('AdminMenu.ui',self)
          self.show()
+         self.HospitalFrame.hide()
          self.EquipmentFrame.hide()
          self.VehicleFrame.hide()
          self.PerformanceFrame.hide()
@@ -47,6 +48,7 @@ class Ui(QtWidgets.QMainWindow):
          self.employeeBtn.clicked.connect(self.EmployeeManagement)
          self.performanceBtn.clicked.connect(self.PerformanceManagement)
          self.vehicleBtn.clicked.connect(self.VehicleManagement)
+         self.hospitalBtn.clicked.connect(self.hospitalManagement)
          self.logoutBtn.clicked.connect(self.login_Window)
          
     def emergencyReq(self):
@@ -85,6 +87,7 @@ class Ui(QtWidgets.QMainWindow):
         self.SelectCaseTab.show()
         
     def EquipmentManagement(self):
+        self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.VehicleFrame.hide()
         self.PerformanceFrame.hide()
@@ -92,6 +95,7 @@ class Ui(QtWidgets.QMainWindow):
         self.EquipmentFrame.show()
     
     def AreaManagement(self):
+        self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.VehicleFrame.hide()
         self.PerformanceFrame.hide()
@@ -99,6 +103,7 @@ class Ui(QtWidgets.QMainWindow):
         self.AreaFrame.show()
         
     def PerformanceManagement(self):
+        self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.VehicleFrame.hide()
         self.AreaFrame.hide()
@@ -106,6 +111,7 @@ class Ui(QtWidgets.QMainWindow):
         self.PerformanceFrame.show()
         
     def VehicleManagement(self):
+        self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.PerformanceFrame.hide()
         self.AreaFrame.hide()
@@ -113,11 +119,20 @@ class Ui(QtWidgets.QMainWindow):
         self.VehicleFrame.show()
         
     def EmployeeManagement(self):
+        self.HospitalFrame.hide()
         self.VehicleFrame.hide()
         self.PerformanceFrame.hide()
         self.AreaFrame.hide()
         self.EquipmentFrame.hide()
         self.EmployeeTab.show()
+        
+    def hospitalManagement(self):
+        self.VehicleFrame.hide()
+        self.PerformanceFrame.hide()
+        self.AreaFrame.hide()
+        self.EquipmentFrame.hide()
+        self.EmployeeTab.hide()
+        self.HospitalFrame.show()
          
     def login_Window(self):
          self.hide()

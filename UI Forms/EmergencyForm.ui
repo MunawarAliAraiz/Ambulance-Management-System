@@ -305,6 +305,41 @@ border-radius:8px;</string>
 font: 75 18pt &quot;News706 BT&quot;;
 border-radius:8px;</string>
       </property>
+      <item>
+       <property name="text">
+        <string>Medical</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Road Accident</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fire Burn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Electric Shock</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Blood Pressure</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Allergy</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Terror Attack</string>
+       </property>
+      </item>
      </widget>
      <widget class="QLabel" name="label_9">
       <property name="geometry">
