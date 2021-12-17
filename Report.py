@@ -1,3 +1,4 @@
+import RecordData as f2
 class Report:
     def __init__(self, caseNo, date, emergencyType, ambulanceNo, driverName, requestTime, arrivalTime, returnTime, Feedback):
         self.caseNo=caseNo
@@ -54,12 +55,19 @@ class Report:
     def getFeedback(self):
         return self.Feedback
 
-    
-    def AddReport(x):
 
-    def DeleteReport(x):
 
-    def UpdateReport(x,y):
-
-    def ViewReport():
+r=Equipment("0000","corolla","car","////",16)
+a = f2.RecordData.getInstance()
+a.addEquipment(r)
+d=Equipment("1234","sazuki","car","////",16)
+a.addEquipment(d)
+e=Equipment("4321","Toyota","bike","////",16)
+a.addEquipment(e)
+a.FindEquipment(e)
+a.viewEquipment()
+print("//////////////////////////////////////")
+a.DeleteEquipment(e)
+a.viewEquipment()
+a.GetEquipmentIndex(d)
         

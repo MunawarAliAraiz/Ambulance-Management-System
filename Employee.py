@@ -1,3 +1,4 @@
+import RecordData as f2
 class Employee:
     def __init__(self, name, CNIC, cellNo, email, password , type , shift):
         self.name=name
@@ -42,10 +43,16 @@ class Employee:
     def getshift(self):
         return self.shift
 
-    def AddEmployee(x):
-
-    def DeleteEmployee(x):
-
-    def UpdateEmployee(x,y):
-
-    def ViewEmployee():
+r=Equipment("0000","corolla","car","////",16)
+a = f2.RecordData.getInstance()
+a.addEquipment(r)
+d=Equipment("1234","sazuki","car","////",16)
+a.addEquipment(d)
+e=Equipment("4321","Toyota","bike","////",16)
+a.addEquipment(e)
+a.FindEquipment(e)
+a.viewEquipment()
+print("//////////////////////////////////////")
+a.DeleteEquipment(e)
+a.viewEquipment()
+a.GetEquipmentIndex(d)

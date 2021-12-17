@@ -27,10 +27,13 @@ class LinkedList:
                 currentElement.next=NodeToPlace
 
     def ViewList(self):
+        listToReturn=[]
         currentElement=self.head
         while(currentElement!=None):
-            print(currentElement.val)
+            listToReturn.append(currentElement.val)
             currentElement=currentElement.next
+        return listToReturn
+
 
     def FindNode(self, x):
         currentElement=self.head
@@ -71,14 +74,3 @@ class LinkedList:
             z=currentElement
             currentElement=currentElement.next
 
-list = LinkedList()
-#5tf  print(list.IsEmpty())
-list.InsetAtEnd(5)
-list.InsetAtEnd(7)
-list.InsetAtEnd(9)
-# list.FindNode(9)
-# print(list.getIndex(10))
-# list.deleteFromStart()
-# list.deleteFromEnd()
-# list.DeleteNode(5)
-list.ViewList()

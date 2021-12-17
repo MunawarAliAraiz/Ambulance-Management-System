@@ -1,3 +1,4 @@
+import RecordData as f2
 class District:
     def __init__(self, name, noOfAreas, noOfHospitals, AmblanceCenter):
         self.name=name
@@ -25,10 +26,17 @@ class District:
     def getAmblanceCenter(self):
         return self.AmblanceCenter
 
-    def AddDistrict(x):
 
-    def DeleteDistrict(x):
-
-    def UpdateDistrict(x,y):
-
-    def ViewDistrict():
+r=Equipment("0000","corolla","car","////",16)
+a = f2.RecordData.getInstance()
+a.addEquipment(r)
+d=Equipment("1234","sazuki","car","////",16)
+a.addEquipment(d)
+e=Equipment("4321","Toyota","bike","////",16)
+a.addEquipment(e)
+a.FindEquipment(e)
+a.viewEquipment()
+print("//////////////////////////////////////")
+a.DeleteEquipment(e)
+a.viewEquipment()
+a.GetEquipmentIndex(d)

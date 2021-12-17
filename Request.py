@@ -1,3 +1,4 @@
+import RecordData as f2
 class Request:
     def __init__(self, name, CNIC, cellNo, district, area):
         self.name=name
@@ -31,11 +32,18 @@ class Request:
     def getcellNo(self):
         return self.cellNo
 
-    def AddRequest(x):
 
-    def DeleteRequest(x):
-
-    def UpdateRequest(x,y):
-
-    def ViewRequest():
+r=Request("0000","corolla","car","////","16")
+a = f2.RecordData.getInstance()
+a.addRequest(r)
+d=Request("1234","sazuki","car","////","16")
+a.addRequest(d)
+e=Request("4321","Toyota","bike","////","16")
+a.addRequest(e)
+a.FindRequest(e)
+a.viewRequest()
+print("//////////////////////////////////////")
+a.DeleteRequest(d)
+a.viewRequest()
+a.GetRequestIndex(d)
         
