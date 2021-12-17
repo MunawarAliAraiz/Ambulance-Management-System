@@ -44,6 +44,17 @@ class LinkedList:
             currentElement=currentElement.next
         print("Node not found")
 
+    
+    def UpdateNode(self, x, y):
+        currentElement=self.head
+        while(currentElement!=None):
+            if(currentElement.val==x):
+                currentElement.val=y 
+                return
+            currentElement=currentElement.next
+
+
+
     def getIndex(self,x):
         index=0
         currentElement=self.head
@@ -67,6 +78,8 @@ class LinkedList:
 
     def DeleteNode(self, x):
         z=0
+        if(self.getIndex(x)==0):
+            self.deleteFromStart()
         currentElement=self.head
         while(currentElement!=None):
             if(currentElement.val==x):

@@ -1,10 +1,10 @@
 import RecordData as f2
 class District:
-    def __init__(self, name, noOfAreas, noOfHospitals, AmblanceCenter):
+    def __init__(self, name, noOfAreas, noOfHospitals,areas, AmblanceCenter):
         self.name=name
         self.noOfAreas=noOfAreas 
-        #list of areas
         self.noOfHospitals=noOfHospitals
+        self.areas=areas
         self.AmblanceCenter=AmblanceCenter     
     def setname(self, x):
         self.name=x   
@@ -15,6 +15,11 @@ class District:
         self.noOfAreas=x   
     def getnoOfAreas(self):
         return self.noOfAreas
+
+    def setareas(self, x):
+        self.areas.append(x)   
+    def getareas(self):
+        return self.areas
 
     def setnoOfHospitals(self, x):
         self.noOfHospitals=x   
@@ -27,16 +32,16 @@ class District:
         return self.AmblanceCenter
 
 
-r=Equipment("0000","corolla","car","////",16)
-a = f2.RecordData.getInstance()
-a.addEquipment(r)
-d=Equipment("1234","sazuki","car","////",16)
-a.addEquipment(d)
-e=Equipment("4321","Toyota","bike","////",16)
-a.addEquipment(e)
-a.FindEquipment(e)
-a.viewEquipment()
-print("//////////////////////////////////////")
-a.DeleteEquipment(e)
-a.viewEquipment()
-a.GetEquipmentIndex(d)
+# r=District("0000","corolla","car",["asad", "saad"],"16")
+# a = f2.RecordData.getInstance()
+# a.addDistrict(r)
+# d=District("1234","sazuki","car",["asad", "saad"],16)
+# a.addDistrict(d)
+# e=District("4321","Toyota","bike",["asad", "saad"],16)
+# a.addDistrict(e)
+# a.FindDistrict(e)
+# a.viewDistrict()
+# print("//////////////////////////////////////")
+# a.DeleteDistrict(e)
+# a.viewDistrict()
+# a.GetDistrictIndex(d)
