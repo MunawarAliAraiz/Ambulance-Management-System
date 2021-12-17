@@ -293,7 +293,7 @@ border-radius:16px;
       <enum>QTabWidget::Rounded</enum>
      </property>
      <property name="currentIndex">
-      <number>3</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="addEmp">
       <attribute name="title">
@@ -2432,8 +2432,8 @@ background-color: rgb(255, 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>100</x>
-           <y>150</y>
-           <width>401</width>
+           <y>140</y>
+           <width>451</width>
            <height>192</height>
           </rect>
          </property>
@@ -4029,10 +4029,10 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
     <zorder>Project_Title</zorder>
     <zorder>Side_Tab_Pane</zorder>
     <zorder>PerformanceFrame</zorder>
-    <zorder>HospitalFrame</zorder>
-    <zorder>EmployeeTab</zorder>
     <zorder>AreaFrame</zorder>
     <zorder>EquipmentFrame</zorder>
+    <zorder>HospitalFrame</zorder>
+    <zorder>EmployeeTab</zorder>
     <zorder>VehicleFrame</zorder>
    </widget>
   </widget>

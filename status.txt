@@ -1,0 +1,9 @@
+Tasks that you have successfuly complted
+Generic linked list is implemented
+Binary search tree is also placed
+CRUD operations of Employee, Vehicle, Reports,Requests,Equipments,Hospitals and districts are created 
+All the add and view functions are integrated with our GUI 
+
+Improvements required
+Delete and update features integrations
+Graph implementations

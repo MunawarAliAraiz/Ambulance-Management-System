@@ -43,17 +43,3 @@ class Employee:
         self.shift=x   
     def getshift(self):
         return self.shift
-
-# r=Equipment("0000","corolla","car","////",16)
-# a = f2.RecordData.getInstance()
-# a.addEquipment(r)
-# d=Equipment("1234","sazuki","car","////",16)
-# a.addEquipment(d)
-# e=Equipment("4321","Toyota","bike","////",16)
-# a.addEquipment(e)
-# a.FindEquipment(e)
-# a.viewEquipment()
-# print("//////////////////////////////////////")
-# a.DeleteEquipment(e)
-# a.viewEquipment()
-# a.GetEquipmentIndex(d)

@@ -1,9 +1,15 @@
-import RecordData as f2
 class Vehicle:
-    def __init__(self, VehicleNo, model, type):
+    def __init__(self, name, VehicleNo, model, type):
+        self.name=name
         self.VehicleNo=VehicleNo
         self.model=model     
         self.type=type
+        
+    def setname(self, x):
+        self.name=x   
+    def getname(self):
+        return self.name
+        
     def setVehicleNo(self, x):
         self.VehicleNo=x   
     def getVehicleNo(self):

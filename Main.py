@@ -1,5 +1,10 @@
 import sys
+import Hospital as f1
+import RecordData as f2
+import Employee as f3
+import Vehicle as f4
 from PyQt5 import QtWidgets, uic
+from PyQt5.QtWidgets import QTableWidgetItem
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
@@ -117,6 +122,36 @@ class Ui(QtWidgets.QMainWindow):
         self.AreaFrame.hide()
         self.EquipmentFrame.hide()
         self.VehicleFrame.show()
+        self.ShowVehicle()
+        self.pushButton_4.clicked.connect(self.AddVehicle)
+        
+    def ShowVehicle(self):
+        self.tableWidget_3.clear()
+        listing=[]
+        listing=f2.RecordData.FVehicleList.ViewList()
+        self.tableWidget_3.setHorizontalHeaderLabels(["Vehicle n.","Name","Mdel","Type"])
+        for i in range(len(listing)):
+            self.tableWidget_3.setRowCount(len(listing))
+            got=listing[i]
+            self.tableWidget_3.setItem( i , 0 ,QTableWidgetItem(got.getVehicleNo()))
+            self.tableWidget_3.setItem( i , 1 ,QTableWidgetItem(got.getname()))
+            self.tableWidget_3.setItem( i , 2 ,QTableWidgetItem(got.getmodel()))
+            self.tableWidget_3.setItem( i , 3 ,QTableWidgetItem(got.gettype()))
+            
+            
+    def AddVehicle(self):
+        a=self.textEdit_6.toPlainText()
+        b=self.textEdit_27.toPlainText()
+        c=self.comboBox_31.currentText()
+        d=self.comboBox_30.currentText()
+        h=f4.Vehicle(a,b,c,d)
+        ele=f2.RecordData.getInstance()
+        ele.addVehicle(h)
+        self.textEdit_6.setText("")
+        self.textEdit_27.setText("")
+        self.ShowVehicle()
+        print("Vehicle Added ")
+        
         
     def EmployeeManagement(self):
         self.HospitalFrame.hide()
@@ -125,6 +160,25 @@ class Ui(QtWidgets.QMainWindow):
         self.AreaFrame.hide()
         self.EquipmentFrame.hide()
         self.EmployeeTab.show()
+        self.pushButton_2.clicked.connect(self.AddEmployee)
+            
+    def AddEmployee(self):
+        a=self.textEdit.toPlainText()
+        b=self.textEdit_2.toPlainText()
+        c=self.textEdit_3.toPlainText()
+        d=self.textEdit_7.toPlainText()
+        e=self.comboBox_2.currentText()
+        f=self.comboBox_3.currentText()
+        h=f3.Employee(a,b,c,d,"0000",e,f)
+        ele=f2.RecordData.getInstance()
+        ele.addEmployee(h)
+        self.textEdit_33.setText("")
+        self.textEdit_32.setText("")
+        print("Employee Added ")
+        self.textEdit.setText("")
+        self.textEdit_2.setText("")
+        self.textEdit_3.setText("")
+        self.textEdit_7.setText("")
         
     def hospitalManagement(self):
         self.VehicleFrame.hide()
@@ -132,8 +186,31 @@ class Ui(QtWidgets.QMainWindow):
         self.AreaFrame.hide()
         self.EquipmentFrame.hide()
         self.EmployeeTab.hide()
+        self.setHospitals()
         self.HospitalFrame.show()
-         
+        self.pushButton_16.clicked.connect(self.AddHospital)
+    
+    def setHospitals(self):
+        self.comboBox_25.clear()
+        listing=[]
+        listing=f2.RecordData.HospitaList.ViewList()
+        for i in range(len(listing)):
+            f=listing[i]
+            self.comboBox_25.addItem(f.getname())
+            
+            
+    def AddHospital(self):
+        a=self.textEdit_33.toPlainText()
+        b=self.textEdit_32.toPlainText()
+        c=self.comboBox_24.currentText()
+        h=f1.Hospital(a,c,b)
+        ele=f2.RecordData.getInstance()
+        ele.addHospital(h)
+        self.textEdit_33.setText("")
+        self.textEdit_32.setText("")
+        print("Hospital Added ")
+        self.setHospitals()
+        
     def login_Window(self):
          self.hide()
          super(Ui, self).__init__()

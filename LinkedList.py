@@ -45,6 +45,15 @@ class LinkedList:
         print("Node not found")
 
     
+    def length(self):
+        index=1
+        currentElement=self.head
+        while(currentElement!=None):
+            index=index+1
+            currentElement=currentElement.next
+        return index
+        
+        
     def UpdateNode(self, x, y):
         currentElement=self.head
         while(currentElement!=None):
