@@ -204,7 +204,7 @@ border: 1px solid #000000
 }</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton">
+     <widget class="QRadioButton" name="adminBtn">
       <property name="geometry">
        <rect>
         <x>180</x>
@@ -220,7 +220,7 @@ border: 1px solid #000000
        <string>Admin</string>
       </property>
      </widget>
-     <widget class="QRadioButton" name="radioButton_2">
+     <widget class="QRadioButton" name="employeeBtn">
       <property name="geometry">
        <rect>
         <x>300</x>
