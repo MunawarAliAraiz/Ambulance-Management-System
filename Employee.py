@@ -1,6 +1,7 @@
 import RecordData as f2
 class Employee:
-    def __init__(self, name, CNIC, cellNo, email, password , type , shift):
+    def __init__(self, registratin, name, CNIC, cellNo, email, password , type , shift):
+        self.registratin=registratin
         self.name=name
         self.CNIC=CNIC  
         self.cellNo=cellNo
@@ -8,7 +9,14 @@ class Employee:
         self.password=password
         self.type=type 
         self.shift=shift   
+     
         
+    def setregistratin(self, x):
+        self.registratin=x   
+    def getregistratin(self):
+        return self.registratin
+    
+    
     def setname(self, x):
         self.name=x   
     def getname(self):

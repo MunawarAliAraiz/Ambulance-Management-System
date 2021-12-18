@@ -329,7 +329,7 @@ border-radius:16px;
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>410</y>
+          <y>430</y>
           <width>101</width>
           <height>41</height>
          </rect>
@@ -347,8 +347,8 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
        <widget class="QLabel" name="label_3">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>110</y>
+          <x>80</x>
+          <y>130</y>
           <width>91</width>
           <height>21</height>
          </rect>
@@ -366,8 +366,8 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
        <widget class="QLabel" name="label_4">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>160</y>
+          <x>80</x>
+          <y>170</y>
           <width>131</width>
           <height>21</height>
          </rect>
@@ -385,8 +385,8 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
        <widget class="QLabel" name="label_5">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>210</y>
+          <x>80</x>
+          <y>220</y>
           <width>111</width>
           <height>21</height>
          </rect>
@@ -405,7 +405,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>100</y>
+          <y>120</y>
           <width>291</width>
           <height>31</height>
          </rect>
@@ -420,7 +420,7 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>150</y>
+          <y>170</y>
           <width>291</width>
           <height>31</height>
          </rect>
@@ -435,7 +435,7 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>200</y>
+          <y>220</y>
           <width>291</width>
           <height>31</height>
          </rect>
@@ -451,7 +451,7 @@ border-radius:5px;
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>260</y>
+          <y>280</y>
           <width>111</width>
           <height>21</height>
          </rect>
@@ -470,7 +470,7 @@ border-radius:5px;
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>310</y>
+          <y>330</y>
           <width>111</width>
           <height>21</height>
          </rect>
@@ -489,7 +489,7 @@ border-radius:5px;
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>350</y>
+          <y>370</y>
           <width>141</width>
           <height>31</height>
          </rect>
@@ -508,7 +508,7 @@ border-radius:5px;
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>300</y>
+          <y>320</y>
           <width>291</width>
           <height>31</height>
          </rect>
@@ -533,7 +533,7 @@ border-radius:8px;</string>
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>350</y>
+          <y>370</y>
           <width>291</width>
           <height>31</height>
          </rect>
@@ -583,7 +583,7 @@ background-color: rgb(255, 255, 255);</string>
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>250</y>
+          <y>270</y>
           <width>291</width>
           <height>31</height>
          </rect>
@@ -593,6 +593,40 @@ background-color: rgb(255, 255, 255);</string>
 font: 75 14pt &quot;News706 BT&quot;;
 border-radius:5px;
 </string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_86">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>80</y>
+          <width>151</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Registration No.</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="textEdit_14">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>80</y>
+          <width>291</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;</string>
         </property>
        </widget>
       </widget>
@@ -1341,7 +1375,7 @@ border-radius:16px;
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="addEqp">
        <attribute name="title">
@@ -1393,7 +1427,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
          <property name="geometry">
           <rect>
            <x>90</x>
-           <y>140</y>
+           <y>150</y>
            <width>91</width>
            <height>21</height>
           </rect>
@@ -1412,7 +1446,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
          <property name="geometry">
           <rect>
            <x>90</x>
-           <y>190</y>
+           <y>200</y>
            <width>131</width>
            <height>21</height>
           </rect>
@@ -1431,7 +1465,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
          <property name="geometry">
           <rect>
            <x>90</x>
-           <y>240</y>
+           <y>250</y>
            <width>111</width>
            <height>21</height>
           </rect>
@@ -1450,7 +1484,7 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
          <property name="geometry">
           <rect>
            <x>250</x>
-           <y>130</y>
+           <y>140</y>
            <width>291</width>
            <height>31</height>
           </rect>
@@ -1465,7 +1499,7 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
          <property name="geometry">
           <rect>
            <x>250</x>
-           <y>230</y>
+           <y>250</y>
            <width>291</width>
            <height>31</height>
           </rect>
@@ -1481,7 +1515,7 @@ border-radius:5px;
          <property name="geometry">
           <rect>
            <x>90</x>
-           <y>290</y>
+           <y>300</y>
            <width>111</width>
            <height>21</height>
           </rect>
@@ -1520,7 +1554,7 @@ background-color: rgb(255, 255, 255);</string>
          <property name="geometry">
           <rect>
            <x>250</x>
-           <y>280</y>
+           <y>300</y>
            <width>291</width>
            <height>31</height>
           </rect>
@@ -1536,7 +1570,7 @@ border-radius:5px;
          <property name="geometry">
           <rect>
            <x>250</x>
-           <y>180</y>
+           <y>200</y>
            <width>291</width>
            <height>31</height>
           </rect>
@@ -1566,6 +1600,40 @@ border-radius:8px;</string>
            <string>Electricity</string>
           </property>
          </item>
+        </widget>
+        <widget class="QTextEdit" name="textEdit_13">
+         <property name="geometry">
+          <rect>
+           <x>250</x>
+           <y>90</y>
+           <width>291</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-radius:5px;
+background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_22">
+         <property name="geometry">
+          <rect>
+           <x>60</x>
+           <y>100</y>
+           <width>131</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Equipment no.</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
         </widget>
        </widget>
       </widget>
@@ -1848,11 +1916,6 @@ gridline-color: rgb(0, 0, 0);
          </column>
          <column>
           <property name="text">
-           <string>Use</string>
-          </property>
-         </column>
-         <column>
-          <property name="text">
            <string>Price</string>
           </property>
          </column>
@@ -1909,7 +1972,7 @@ border-radius:16px;
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="addVeh">
        <attribute name="title">
@@ -2551,7 +2614,7 @@ border-radius:16px;
        <enum>QTabWidget::Rounded</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="addDis">
        <attribute name="title">
@@ -2907,7 +2970,7 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
 background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Update Employee</string>
+          <string>Update District</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -3099,78 +3162,6 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
           <string>Add</string>
          </property>
         </widget>
-        <widget class="QLabel" name="label_64">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>250</y>
-           <width>91</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Area 2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_65">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>300</y>
-           <width>131</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Distance</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_66">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>350</y>
-           <width>111</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Traffic</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QTextEdit" name="textEdit_30">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>300</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-        </widget>
         <widget class="QLabel" name="label_67">
          <property name="geometry">
           <rect>
@@ -3185,408 +3176,57 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
 background-color: rgb(255, 255, 255);</string>
          </property>
          <property name="text">
-          <string>Add Link</string>
+          <string>View Area</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
          </property>
         </widget>
-        <widget class="QLabel" name="label_68">
+        <widget class="QTableWidget" name="tableWidget_6">
          <property name="geometry">
           <rect>
            <x>90</x>
-           <y>200</y>
-           <width>151</width>
-           <height>21</height>
+           <y>140</y>
+           <width>441</width>
+           <height>181</height>
           </rect>
          </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Area 1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_17">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>200</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
+         <property name="maximumSize">
+          <size>
+           <width>441</width>
+           <height>181</height>
+          </size>
          </property>
          <property name="styleSheet">
           <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
+font: 75 12pt &quot;News706 BT&quot;;
+color: rgb(0, 0, 0);
+border-radius:26px;
+gridline-color: rgb(0, 0, 0);</string>
          </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_18">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>350</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
          </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-         <item>
+         <column>
           <property name="text">
-           <string>High</string>
+           <string>Name</string>
           </property>
-         </item>
-         <item>
+         </column>
+         <column>
           <property name="text">
-           <string>Medium</string>
+           <string>No of areas</string>
           </property>
-         </item>
-         <item>
+         </column>
+         <column>
           <property name="text">
-           <string>Low</string>
+           <string>Areas</string>
           </property>
-         </item>
-        </widget>
-        <widget class="QComboBox" name="comboBox_19">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>250</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_26">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>150</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_84">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>150</y>
-           <width>151</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>District</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-       </widget>
-      </widget>
-      <widget class="QWidget" name="UpdLink">
-       <attribute name="title">
-        <string>Update Link</string>
-       </attribute>
-       <widget class="QFrame" name="frame_15">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>0</y>
-          <width>631</width>
-          <height>491</height>
-         </rect>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">background-color: rgb(240, 240, 240);
-border-radius:16px;
-</string>
-        </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <widget class="QPushButton" name="pushButton_15">
-         <property name="geometry">
-          <rect>
-           <x>260</x>
-           <y>400</y>
-           <width>101</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 18pt &quot;News706 BT&quot;;
-border-radius:5px;
-color: rgb(255, 255, 255);
-background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, stop:0.0795455 rgba(9, 169, 0, 255), stop:0.522727 rgba(0, 255, 50, 255), stop:0.931818 rgba(15, 155, 0, 255));</string>
-         </property>
-         <property name="text">
-          <string>Update</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_69">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>200</y>
-           <width>91</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Area 2</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_70">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>250</y>
-           <width>131</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Distance</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_71">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>300</y>
-           <width>111</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Traffic</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QTextEdit" name="textEdit_31">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>250</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">border-radius:5px;
-background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_72">
-         <property name="geometry">
-          <rect>
-           <x>120</x>
-           <y>40</y>
-           <width>421</width>
-           <height>41</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 24pt &quot;News706 BT&quot;;
-background-color: rgb(255, 255, 255);</string>
-         </property>
-         <property name="text">
-          <string>Update Link</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_73">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>160</y>
-           <width>151</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Area 1</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_20">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>150</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_21">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>300</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-         <item>
+         </column>
+         <column>
           <property name="text">
-           <string>High</string>
+           <string>centers</string>
           </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Medium</string>
-          </property>
-         </item>
-         <item>
-          <property name="text">
-           <string>Low</string>
-          </property>
-         </item>
-        </widget>
-        <widget class="QComboBox" name="comboBox_22">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>200</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_74">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>350</y>
-           <width>131</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>Remove Link</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_23">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>350</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="label_85">
-         <property name="geometry">
-          <rect>
-           <x>90</x>
-           <y>110</y>
-           <width>151</width>
-           <height>21</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">font: 75 14pt &quot;News706 BT&quot;;</string>
-         </property>
-         <property name="text">
-          <string>District</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-         </property>
-        </widget>
-        <widget class="QComboBox" name="comboBox_27">
-         <property name="geometry">
-          <rect>
-           <x>250</x>
-           <y>100</y>
-           <width>291</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;</string>
-         </property>
+         </column>
         </widget>
        </widget>
       </widget>
@@ -4063,11 +3703,17 @@ font: 75 14pt &quot;News706 BT&quot;;</string>
     <zorder>Project_Title</zorder>
     <zorder>Side_Tab_Pane</zorder>
     <zorder>PerformanceFrame</zorder>
+<<<<<<< Updated upstream
     <zorder>AreaFrame</zorder>
     <zorder>EmployeeTab</zorder>
     <zorder>EquipmentFrame</zorder>
+=======
+>>>>>>> Stashed changes
     <zorder>HospitalFrame</zorder>
     <zorder>VehicleFrame</zorder>
+    <zorder>EquipmentFrame</zorder>
+    <zorder>EmployeeTab</zorder>
+    <zorder>AreaFrame</zorder>
    </widget>
   </widget>
  </widget>

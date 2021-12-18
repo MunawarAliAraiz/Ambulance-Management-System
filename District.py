@@ -1,9 +1,7 @@
-import RecordData as f2
 class District:
-    def __init__(self, name, noOfAreas, noOfHospitals,areas, AmblanceCenter):
+    def __init__(self, name, noOfAreas,areas, AmblanceCenter):
         self.name=name
         self.noOfAreas=noOfAreas 
-        self.noOfHospitals=noOfHospitals
         self.areas=areas
         self.AmblanceCenter=AmblanceCenter     
     def setname(self, x):
@@ -21,27 +19,7 @@ class District:
     def getareas(self):
         return self.areas
 
-    def setnoOfHospitals(self, x):
-        self.noOfHospitals=x   
-    def getnoOfHospitals(self):
-        return self.noOfHospitals
-
     def setAmblanceCenter(self, x):
         self.AmblanceCenter=x   
     def getAmblanceCenter(self):
         return self.AmblanceCenter
-
-
-# r=District("0000","corolla","car",["asad", "saad"],"16")
-# a = f2.RecordData.getInstance()
-# a.addDistrict(r)
-# d=District("1234","sazuki","car",["asad", "saad"],16)
-# a.addDistrict(d)
-# e=District("4321","Toyota","bike",["asad", "saad"],16)
-# a.addDistrict(e)
-# a.FindDistrict(e)
-# a.viewDistrict()
-# print("//////////////////////////////////////")
-# a.DeleteDistrict(e)
-# a.viewDistrict()
-# a.GetDistrictIndex(d)
