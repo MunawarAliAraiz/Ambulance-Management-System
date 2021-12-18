@@ -3,13 +3,10 @@ import Hospital as f1
 import RecordData as f2
 import Employee as f3
 import Vehicle as f4
-<<<<<<< Updated upstream
 from tkinter import *
 from tkinter import messagebox
-=======
 import Equipment as f5
 import District as f6
->>>>>>> Stashed changes
 from PyQt5 import QtWidgets, uic
 from PyQt5.QtWidgets import QTableWidgetItem
 class Ui(QtWidgets.QMainWindow):
@@ -163,7 +160,8 @@ class Ui(QtWidgets.QMainWindow):
         self.textEdit_12.setText("")
         self.textEdit_5.setText("")
         self.ShowEquipment()
-        print("Equipment Added ")
+        message = "Equipment Added "
+        self.messageBox(message)
         self.setcomboBox_15()
     
     
@@ -200,9 +198,9 @@ class Ui(QtWidgets.QMainWindow):
     def AddArea(self,x):
         addedArea=[]
         if(x!="0"):
-           d=self.textEdit_26.toPlainText()
-           addedArea.append(d)
-           self.textEdit_26.setText("")
+            d=self.textEdit_26.toPlainText()
+            addedArea.append(d)
+            self.textEdit_26.setText("")
         if(x=="0"):
             a=self.textEdit_15.toPlainText()
             b=self.textEdit_25.toPlainText()
@@ -236,10 +234,7 @@ class Ui(QtWidgets.QMainWindow):
         self.setcomboBox_16()
         self.ShowVehicle()
         self.pushButton_4.clicked.connect(self.AddVehicle)
-<<<<<<< Updated upstream
-        self.pushButton_18.clicked.connect(self.setVehicles_2)
         self.pushButton_9.clicked.connect(self.DeleteVehicle)
-=======
         self.comboBox_16.currentTextChanged.connect(self.onsetcomboBox_16)
     
     def setcomboBox_16(self):
@@ -253,7 +248,7 @@ class Ui(QtWidgets.QMainWindow):
             
     def onsetcomboBox_16(self):
         self.selectcomboBox_16()
->>>>>>> Stashed changes
+
         
     def selectcomboBox_16(self):
         x=self.comboBox_16.currentText()
@@ -294,14 +289,11 @@ class Ui(QtWidgets.QMainWindow):
         self.textEdit_6.setText("")
         self.textEdit_27.setText("")
         self.ShowVehicle()
-<<<<<<< Updated upstream
         message = "Vehicle Added !!"
         self.messageBox(message)
         self.setVehicles()
-=======
-        print("Vehicle Added ")
         self.setcomboBox_16()
->>>>>>> Stashed changes
+        
         
     def DeleteVehicle(self):
         a = self.comboBox_16.currentText()
@@ -329,8 +321,6 @@ class Ui(QtWidgets.QMainWindow):
         self.EquipmentFrame.hide()
         self.EmployeeTab.show()
         self.pushButton_2.clicked.connect(self.AddEmployee)
-<<<<<<< Updated upstream
-=======
         self.selectcomboBox_9()
         self.setcomboBox_9()
         self.selectcomboBox_14()
@@ -390,7 +380,7 @@ class Ui(QtWidgets.QMainWindow):
         self.tableWidget_5.clear()
         listing=[]
         listing=f2.RecordData.FEmployeeList.ViewList()
-        self.tableWidget_5.setHorizontalHeaderLabels(["reg No", " name","CNIC", "Email", "Type","Cell", "Shift"])
+        self.tableWidget_5.setHorizontalHeaderLabels(["Reg No", " name","CNIC", "Email", "Type","Cell", "Shift"])
         for i in range(len(listing)):
             self.tableWidget_5.setRowCount(len(listing))
             got=listing[i]
@@ -401,7 +391,6 @@ class Ui(QtWidgets.QMainWindow):
             self.tableWidget_5.setItem( i , 4 ,QTableWidgetItem(got.gettype()))
             self.tableWidget_5.setItem( i , 5 ,QTableWidgetItem(got.getcellNo()))
             self.tableWidget_5.setItem( i , 6 ,QTableWidgetItem(got.getshift()))      
->>>>>>> Stashed changes
     
     def AddEmployee(self):
         z=self.textEdit_14.toPlainText()
@@ -420,14 +409,11 @@ class Ui(QtWidgets.QMainWindow):
         self.textEdit_2.setText("")
         self.textEdit_3.setText("")
         self.textEdit_7.setText("")
-<<<<<<< Updated upstream
         message = "Employee Added !!"
         self.messageBox(message)
-=======
         self.ShowEmployee()
         self.setcomboBox_9() 
         self.setcomboBox_14()
->>>>>>> Stashed changes
         
     def hospitalManagement(self):
         self.VehicleFrame.hide()
@@ -454,17 +440,6 @@ class Ui(QtWidgets.QMainWindow):
         for i in range(len(listing)):
             f=listing[i]
             self.comboBox_16.addItem(f.getVehicleNo())
-            
-    def setVehicles_2(self):
-        a = self.comboBox_16.currentText()
-        listing=[]
-        listing=f2.RecordData.FVehicleList.ViewList()
-        for i in range(len(listing)):
-            f=listing[i]
-            if f.getVehicleNo() == a:
-                self.textEdit_22.setText(f.getname())
-                self.textEdit_23.setText(f.getmodel())
-                self.textEdit_24.setText(f.gettype())
     
     def AddHospital(self):
         a=self.textEdit_33.toPlainText()
