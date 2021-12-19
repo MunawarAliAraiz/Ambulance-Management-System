@@ -102,32 +102,4 @@ class LinkedList:
                     return
             currentElement=currentElement.next
             
-#     def display(self):
-#         list1 = []
-#         list1 = vehicleList.ViewList()
-#         for i in range(len(list1)):
-#             x=list1[i]
-#             print(x.getname())
-#             print(x.getmodel())
-#             print(x.getVehicleNo())
-#             print(x.gettype())
-#             print('-----')
 
-# vehicleList = LinkedList()
-# a = vehicle.Vehicle('Suzuki1', '1233', '2009', '1')
-# b = vehicle.Vehicle('Suzuki2', '1233', '2009', '2')
-# c = vehicle.Vehicle('Suzuki3', '1233', '2009', '3')
-# vehicleList.InsetAtEnd(a)
-# vehicleList.InsetAtEnd(b)
-# vehicleList.InsetAtEnd(c)
-
-# vehicleList.display()
-
-# vehicleList.DeleteNode(c)
-# vehicleList.DeleteNode(b)
-# vehicleList.DeleteNode(a)
-
-# print('\nAfter Deletion\n')
-
-
-# vehicleList.display()
