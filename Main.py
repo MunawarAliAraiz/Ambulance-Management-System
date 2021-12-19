@@ -175,6 +175,9 @@ class Ui(QtWidgets.QMainWindow):
         self.selectcomboBox_15()
         self.setcomboBox_15()
         self.ShowEquipment()
+        self.label_36.hide()
+        self.textEdit_26.hide()
+        self.pushButton_10.hide()
         self.pushButton_6.clicked.connect(lambda: self.AddArea("0"))
         self.pushButton_10.clicked.connect(lambda: self.AddArea("1"))
         
@@ -196,24 +199,43 @@ class Ui(QtWidgets.QMainWindow):
             self.tableWidget_6.setItem( i , 3 ,QTableWidgetItem(got.getAmblanceCenter()))
             
     def AddArea(self,x):
-        addedArea=[]
-        if(x!="0"):
+        addedArea = []
+        noOfArea = self.textEdit_25.toPlainText()
+        noOfAreas = int(noOfArea)
+        self.label_36.show()
+        self.label_36.setText("Add Area 1")
+        self.textEdit_26.show()
+        self.pushButton_10.show()
+        self.pushButton_6.hide()
+        if(x=="1"):
             d=self.textEdit_26.toPlainText()
             addedArea.append(d)
             self.textEdit_26.setText("")
+            self.label_36.setText("Add Area "+str(len(addedArea)))
+            print(len(addedArea))
+            if(len(addedArea)==noOfAreas):
+                message = "Areas added Sucessfully"
+                self.messageBox(message)
+                self.label_36.hide()
+                self.textEdit_26.hide()
+                self.pushButton_10.hide()
+                self.pushButton_6.show()
+            return addedArea
         if(x=="0"):
-            a=self.textEdit_15.toPlainText()
-            b=self.textEdit_25.toPlainText()
-            c=self.comboBox_28.currentText()
-            h=f6.District(a,b,addedArea,c)
-            ele=f2.RecordData.getInstance()
-            ele.addDistrict(h)
-            self.textEdit_15.setText("")
-            self.textEdit_25.setText("")
-            print("District Added ")
-            self.ShowArea()
-            addedArea=[]
-    
+            if(len(addedArea)==noOfAreas):
+                a=self.textEdit_15.toPlainText()
+                b=self.textEdit_25.toPlainText()
+                c=self.comboBox_28.currentText()
+                h=f6.District(a,b,addedArea,c)
+                ele=f2.RecordData.getInstance()
+                ele.addDistrict(h)
+                self.textEdit_15.setText("")
+                self.textEdit_25.setText("")
+                message = "District Added "
+                self.messageBox(message)
+                self.ShowArea()
+                addedArea=[]
+            return addedArea
         
     def PerformanceManagement(self):
         self.HospitalFrame.hide()
