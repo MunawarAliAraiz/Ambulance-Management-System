@@ -47,6 +47,8 @@ class Ui(QtWidgets.QMainWindow):
          super(Ui, self).__init__()
          uic.loadUi('AdminMenu.ui',self)
          self.show()
+         self.WelcomeFrame.show()
+         self.EmployeeTab.hide()
          self.HospitalFrame.hide()
          self.EquipmentFrame.hide()
          self.VehicleFrame.hide()
@@ -96,6 +98,7 @@ class Ui(QtWidgets.QMainWindow):
         self.SelectCaseTab.show()
         
     def EquipmentManagement(self):
+        self.WelcomeFrame.hide()
         self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.VehicleFrame.hide()
@@ -166,6 +169,7 @@ class Ui(QtWidgets.QMainWindow):
     
     
     def AreaManagement(self):
+        self.WelcomeFrame.hide()
         self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.VehicleFrame.hide()
@@ -178,28 +182,37 @@ class Ui(QtWidgets.QMainWindow):
         self.label_36.hide()
         self.textEdit_26.hide()
         self.pushButton_10.hide()
-        self.pushButton_6.clicked.connect(lambda: self.AddArea("0"))
-        self.pushButton_10.clicked.connect(lambda: self.AddArea("1"))
+        self.pushButton_6.show()
+        addedArea = []
+        self.pushButton_6.clicked.connect(lambda: self.AddArea("0",addedArea))
+        self.pushButton_10.clicked.connect(lambda: self.AddArea("1",addedArea))
         
     def ShowArea(self):
         self.tableWidget_6.clear()
         listing=[]
         listing=f2.RecordData.FDistrictList.ViewList()
-        self.tableWidget_6.setHorizontalHeaderLabels(["Name","No of areas", " Areas ", "Centers"])
+        self.tableWidget_6.setHorizontalHeaderLabels(["Name","No of areas", "No. of Centers", "Areas"])
         for i in range(len(listing)):
             self.tableWidget_6.setRowCount(len(listing))
+            self.tableWidget_6.setColumnCount(4)
             got=listing[i]
-            self.tableWidget_6.setItem( i , 0 ,QTableWidgetItem(got.getname()))
-            self.tableWidget_6.setItem( i , 1 ,QTableWidgetItem(got.getnoOfAreas()))
+            self.tableWidget_6.setItem( i , 0 ,QtWidgets.QTableWidgetItem(got.getname()))
+            self.tableWidget_6.setItem( i , 1 ,QtWidgets.QTableWidgetItem(got.getnoOfAreas()))
+            self.tableWidget_6.setItem( i , 2 ,QtWidgets.QTableWidgetItem(got.getAmblanceCenter()))
+            areasReturned=[]
             areasReturned=got.getareas()
-            s=" "
-            for i in range(len(areasReturned)):
-                s=s+areasReturned[i]
-            self.tableWidget_6.setItem( i , 2 ,QTableWidgetItem(s))
-            self.tableWidget_6.setItem( i , 3 ,QTableWidgetItem(got.getAmblanceCenter()))
+            s = self.returnAreas(areasReturned)
+            self.tableWidget_6.setItem(i, 3, QtWidgets.QTableWidgetItem(s))
             
-    def AddArea(self,x):
-        addedArea = []
+    def returnAreas(self,areasReturned):
+        s=""
+        for i in range(len(areasReturned)):
+            s=s+areasReturned[i]
+            if(i < len(areasReturned)-1):
+                s=s+", "
+        return s
+    
+    def AddArea(self,x,addedArea):
         noOfArea = self.textEdit_25.toPlainText()
         noOfAreas = int(noOfArea)
         self.label_36.show()
@@ -211,7 +224,7 @@ class Ui(QtWidgets.QMainWindow):
             d=self.textEdit_26.toPlainText()
             addedArea.append(d)
             self.textEdit_26.setText("")
-            self.label_36.setText("Add Area "+str(len(addedArea)))
+            self.label_36.setText("Add Area "+str(len(addedArea)+1))
             print(len(addedArea))
             if(len(addedArea)==noOfAreas):
                 message = "Areas added Sucessfully"
@@ -220,24 +233,28 @@ class Ui(QtWidgets.QMainWindow):
                 self.textEdit_26.hide()
                 self.pushButton_10.hide()
                 self.pushButton_6.show()
-            return addedArea
         if(x=="0"):
-            if(len(addedArea)==noOfAreas):
-                a=self.textEdit_15.toPlainText()
-                b=self.textEdit_25.toPlainText()
-                c=self.comboBox_28.currentText()
-                h=f6.District(a,b,addedArea,c)
-                ele=f2.RecordData.getInstance()
-                ele.addDistrict(h)
-                self.textEdit_15.setText("")
-                self.textEdit_25.setText("")
-                message = "District Added "
-                self.messageBox(message)
-                self.ShowArea()
-                addedArea=[]
-            return addedArea
+            a=self.textEdit_15.toPlainText()
+            b=self.textEdit_25.toPlainText()
+            c=self.comboBox_28.currentText()
+            h=f6.District(a,b,addedArea,c)
+            ele=f2.RecordData.getInstance()
+            ele.addDistrict(h)
+            addedArea=[]
+            self.textEdit_15.setText("")
+            self.textEdit_25.setText("")
+            message = "District Added "
+            self.messageBox(message)
+            self.ShowArea()
+            self.label_36.hide()
+            self.textEdit_26.hide()
+            self.pushButton_10.hide()
+            self.pushButton_6.show()
+                
+            
         
     def PerformanceManagement(self):
+        self.WelcomeFrame.hide()
         self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.VehicleFrame.hide()
@@ -246,6 +263,7 @@ class Ui(QtWidgets.QMainWindow):
         self.PerformanceFrame.show()
         
     def VehicleManagement(self):
+        self.WelcomeFrame.hide()
         self.HospitalFrame.hide()
         self.EmployeeTab.hide()
         self.PerformanceFrame.hide()
@@ -295,10 +313,10 @@ class Ui(QtWidgets.QMainWindow):
         for i in range(len(listing)):
             self.tableWidget_3.setRowCount(len(listing))
             got=listing[i]
-            self.tableWidget_3.setItem( i , 0 ,QTableWidgetItem(got.getVehicleNo()))
-            self.tableWidget_3.setItem( i , 1 ,QTableWidgetItem(got.getname()))
-            self.tableWidget_3.setItem( i , 2 ,QTableWidgetItem(got.getmodel()))
-            self.tableWidget_3.setItem( i , 3 ,QTableWidgetItem(got.gettype()))
+            self.tableWidget_3.setItem( i , 0 ,QtWidgets.QTableWidgetItem(got.getVehicleNo()))
+            self.tableWidget_3.setItem( i , 1 ,QtWidgets.QTableWidgetItem(got.getname()))
+            self.tableWidget_3.setItem( i , 2 ,QtWidgets.QTableWidgetItem(got.getmodel()))
+            self.tableWidget_3.setItem( i , 3 ,QtWidgets.QTableWidgetItem(got.gettype()))
             
     def AddVehicle(self):
         a=self.textEdit_6.toPlainText()
@@ -336,6 +354,7 @@ class Ui(QtWidgets.QMainWindow):
                 break
         
     def EmployeeManagement(self):
+        self.WelcomeFrame.hide()
         self.HospitalFrame.hide()
         self.VehicleFrame.hide()
         self.PerformanceFrame.hide()
@@ -357,7 +376,7 @@ class Ui(QtWidgets.QMainWindow):
         listing=f2.RecordData.FEmployeeList.ViewList()
         for i in range(len(listing)):
             got=listing[i]
-            self.comboBox_9.addItem(got.getregistratin())
+            self.comboBox_9.addItem(got.getregistration())
             
     def setcomboBox_14(self):
         self.comboBox_14.clear()
@@ -365,7 +384,7 @@ class Ui(QtWidgets.QMainWindow):
         listing=f2.RecordData.FEmployeeList.ViewList()
         for i in range(len(listing)):
             got=listing[i]
-            self.comboBox_14.addItem(got.getregistratin())       
+            self.comboBox_14.addItem(got.getregistration())       
             
     def onsetcomboBox_9(self):
         self.selectcomboBox_9()
@@ -380,7 +399,7 @@ class Ui(QtWidgets.QMainWindow):
         listing=f2.RecordData.FEmployeeList.ViewList()
         for i in range(len(listing)):
             got=listing[i]
-            if(got.getregistratin()==x):
+            if(got.getregistration()==x):
                 self.textEdit_8.setText(got.getname())
                 self.textEdit_9.setText(got.getCNIC())
                 self.textEdit_10.setText(got.getcellNo())
@@ -393,7 +412,7 @@ class Ui(QtWidgets.QMainWindow):
         listing=f2.RecordData.FEmployeeList.ViewList()
         for i in range(len(listing)):
             got=listing[i]
-            if(got.getregistratin()==x):
+            if(got.getregistration()==x):
                 self.textEdit_16.setText(got.getname())
                 self.textEdit_17.setText(got.getcellNo())
                 self.textEdit_18.setText(got.getemail())
@@ -402,20 +421,22 @@ class Ui(QtWidgets.QMainWindow):
         self.tableWidget_5.clear()
         listing=[]
         listing=f2.RecordData.FEmployeeList.ViewList()
-        self.tableWidget_5.setHorizontalHeaderLabels(["Reg No", " name","CNIC", "Email", "Type","Cell", "Shift"])
+        self.tableWidget_5.setHorizontalHeaderLabels(["Reg No", "Name","CNIC", "Email", "Type","Cell", "Shift"])
         for i in range(len(listing)):
             self.tableWidget_5.setRowCount(len(listing))
             got=listing[i]
-            self.tableWidget_5.setItem( i , 0 ,QTableWidgetItem(got.getregistratin()))
-            self.tableWidget_5.setItem( i , 1 ,QTableWidgetItem(got.getname()))
-            self.tableWidget_5.setItem( i , 2 ,QTableWidgetItem(got.getCNIC()))
-            self.tableWidget_5.setItem( i , 3 ,QTableWidgetItem(got.getemail()))
-            self.tableWidget_5.setItem( i , 4 ,QTableWidgetItem(got.gettype()))
-            self.tableWidget_5.setItem( i , 5 ,QTableWidgetItem(got.getcellNo()))
-            self.tableWidget_5.setItem( i , 6 ,QTableWidgetItem(got.getshift()))      
+            self.tableWidget_5.setItem( i , 0 ,QtWidgets.QTableWidgetItem(got.getregistration()))
+            self.tableWidget_5.setItem( i , 1 ,QtWidgets.QTableWidgetItem(got.getname()))
+            self.tableWidget_5.setItem( i , 2 ,QtWidgets.QTableWidgetItem(got.getCNIC()))
+            self.tableWidget_5.setItem( i , 3 ,QtWidgets.QTableWidgetItem(got.getemail()))
+            self.tableWidget_5.setItem( i , 4 ,QtWidgets.QTableWidgetItem(got.gettype()))
+            self.tableWidget_5.setItem( i , 5 ,QtWidgets.QTableWidgetItem(got.getcellNo()))
+            self.tableWidget_5.setItem( i , 6 ,QtWidgets.QTableWidgetItem(got.getshift()))      
     
     def AddEmployee(self):
-        z=self.textEdit_14.toPlainText()
+        listing=[]
+        listing=f2.RecordData.FEmployeeList.ViewList()
+        z='Emp-'+str(len(listing)+1)
         a=self.textEdit.toPlainText()
         b=self.textEdit_2.toPlainText()
         c=self.textEdit_3.toPlainText()
@@ -425,6 +446,7 @@ class Ui(QtWidgets.QMainWindow):
         h=f3.Employee(z,a,b,c,d,"0000",e,f)
         ele=f2.RecordData.getInstance()
         ele.addEmployee(h)
+        ele.viewEmployee
         self.textEdit_33.setText("")
         self.textEdit_32.setText("")
         self.textEdit.setText("")
@@ -438,6 +460,7 @@ class Ui(QtWidgets.QMainWindow):
         self.setcomboBox_14()
         
     def hospitalManagement(self):
+        self.WelcomeFrame.hide()
         self.VehicleFrame.hide()
         self.PerformanceFrame.hide()
         self.AreaFrame.hide()
