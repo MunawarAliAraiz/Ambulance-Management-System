@@ -380,10 +380,9 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:6px;
+         <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
         </property>
        </widget>
        <widget class="QTextEdit" name="textEdit_17">
@@ -396,10 +395,9 @@ border: 1px solid #000000;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:6px;
+         <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
         </property>
        </widget>
        <widget class="QTextEdit" name="textEdit_18">
@@ -412,10 +410,9 @@ border: 1px solid #000000;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:6px;
+         <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_41">
@@ -507,9 +504,7 @@ background-color: rgb(255, 255, 255);</string>
         <property name="styleSheet">
          <string notr="true">background-color: rgb(255, 255, 255);
 font: 75 14pt &quot;News706 BT&quot;;
-border-radius:8px;
-border-radius:6px;
-border: 1px solid #000000;</string>
+border-radius:8px;</string>
         </property>
        </widget>
        <widget class="QTextEdit" name="textEdit_19">
@@ -522,10 +517,9 @@ border: 1px solid #000000;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:6px;
+         <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
         </property>
        </widget>
        <widget class="QTextEdit" name="textEdit_20">
@@ -538,10 +532,9 @@ border: 1px solid #000000;</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">border-radius:6px;
+         <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
         </property>
        </widget>
       </widget>
@@ -710,10 +703,10 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_13">
@@ -765,10 +758,10 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
          </property>
         </widget>
         <widget class="QComboBox" name="comboBox_4">
@@ -781,10 +774,9 @@ border: 1px solid #000000;</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:8px;</string>
          </property>
         </widget>
         <widget class="QComboBox" name="comboBox_6">
@@ -797,10 +789,9 @@ border: 1px solid #000000;</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:8px;</string>
          </property>
         </widget>
        </widget>
@@ -1059,10 +1050,10 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_32">
@@ -1094,10 +1085,9 @@ border: 1px solid #000000;</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:8px;</string>
          </property>
         </widget>
         <widget class="QLabel" name="label_33">
@@ -1130,10 +1120,10 @@ background-color: rgb(255, 255, 255);</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
          </property>
         </widget>
         <widget class="QTextEdit" name="textEdit_15">
@@ -1146,10 +1136,10 @@ border: 1px solid #000000;</string>
           </rect>
          </property>
          <property name="styleSheet">
-          <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
          </property>
         </widget>
        </widget>
@@ -1417,10 +1407,9 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-radius:6px;
+       <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
       </property>
      </widget>
      <widget class="QTextEdit" name="textEdit_26">
@@ -1433,10 +1422,10 @@ border: 1px solid #000000;</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
       </property>
      </widget>
      <widget class="QLabel" name="label_37">
@@ -1488,10 +1477,10 @@ background-color: rgb(255, 255, 255);</string>
        </rect>
       </property>
       <property name="styleSheet">
-       <string notr="true">border-radius:6px;
-background-color: rgb(255, 255, 255);
-font: 75 13pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+       <string notr="true">background-color: rgb(255, 255, 255);
+font: 75 14pt &quot;News706 BT&quot;;
+border-radius:5px;
+</string>
       </property>
      </widget>
      <widget class="QPushButton" name="pushButton_10">
@@ -1525,18 +1514,17 @@ background-color: qlineargradient(spread:repeat, x1:1, y1:0, x2:1, y2:0.966, sto
       <property name="styleSheet">
        <string notr="true">border-radius:5px;
 background-color: rgb(255, 255, 255);
-font: 75 14pt &quot;News706 BT&quot;;
-border: 1px solid #000000;</string>
+font: 75 14pt &quot;News706 BT&quot;;</string>
       </property>
      </widget>
     </widget>
     <zorder>Project_Title</zorder>
     <zorder>Side_Tab_Pane</zorder>
     <zorder>EmergencyRequestsFrame</zorder>
-    <zorder>SelectCaseTab</zorder>
-    <zorder>ViewRouteFrame</zorder>
     <zorder>ViewVehicleFrame</zorder>
     <zorder>SelectEquipmentFrame</zorder>
+    <zorder>SelectCaseTab</zorder>
+    <zorder>ViewRouteFrame</zorder>
    </widget>
   </widget>
  </widget>

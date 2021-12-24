@@ -137,6 +137,7 @@ class Ui(QtWidgets.QMainWindow):
             
     def ShowEquipment(self):
         self.tableWidget_2.clear()
+        self.tableWidget_2.setColumnCount(4)
         listing=[]
         listing=f2.RecordData.FEquipmentList.ViewList()
         self.tableWidget_2.setHorizontalHeaderLabels(["Number","Name","Type","Price"])
@@ -150,7 +151,9 @@ class Ui(QtWidgets.QMainWindow):
             
             
     def AddEquipment(self):
-        a=self.textEdit_13.toPlainText()
+        listing=[]
+        listing=f2.RecordData.FEquipmentList.ViewList()
+        a=str(len(listing))
         b=self.textEdit_4.toPlainText()
         c=self.comboBox_4.currentText()
         d=self.textEdit_12.toPlainText()
@@ -158,7 +161,6 @@ class Ui(QtWidgets.QMainWindow):
         h=f5.Equipment(a,b,c,d,e)
         ele=f2.RecordData.getInstance()
         ele.addEquipment(h)
-        self.textEdit_13.setText("")
         self.textEdit_4.setText("")
         self.textEdit_12.setText("")
         self.textEdit_5.setText("")
@@ -166,6 +168,7 @@ class Ui(QtWidgets.QMainWindow):
         message = "Equipment Added "
         self.messageBox(message)
         self.setcomboBox_15()
+        ele.SaveEquipment()
     
     
     def AreaManagement(self):
@@ -517,10 +520,18 @@ class Ui(QtWidgets.QMainWindow):
          self.exitBtn.clicked.connect(self.exit)
          
     def login_type(self):
+        message = "Invalid Credentials"
         if self.adminBtn.isChecked():
-            self.admin_Window()
+            if self.textEdit.toPlainText() == "Admin" and self.textEdit_2.toPlainText() == "Admin":
+                self.admin_Window()
+            else:
+                self.messageBox(message)
         elif self.employeeBtn.isChecked():
-            self.employee_Window()
+            if self.textEdit.toPlainText() == "Employee" and self.textEdit_2.toPlainText() == "Employee":
+                self.employee_Window()
+            else:
+                self.messageBox(message)
+            
             
     def messageBox(self,message):
         window = Tk()

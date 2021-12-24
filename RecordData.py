@@ -1,4 +1,5 @@
 import LinkedList as f1
+import csv
 class RecordData:
     HospitaList=f1.LinkedList()
     FEquipmentList=f1.LinkedList()
@@ -23,6 +24,7 @@ class RecordData:
 
     def addHospital(self, x):
         self.HospitaList.InsetAtEnd(x)
+        
 
     def viewHospital(self):
         hospitalList=[]
@@ -52,6 +54,31 @@ class RecordData:
     def addEquipment(self, x):
         self.FEquipmentList.InsetAtEnd(x)
 
+    def SaveEquipment(self):
+        listing=[]
+        listing=self.FEquipmentList.ViewList()
+        rows = []
+        for i in range(len(listing)):
+            got = listing[i]
+            row = []
+            row.append(got.getnumber())
+            row.append(got.getname())
+            row.append(got.gettype())
+            row.append(got.getuse())
+            row.append(got.getprice())
+            rows.append(row)
+        fields = ['Number','Name', 'Type', 'Use', 'Price']
+        # name of csv file 
+        filename = "Equipments.csv"
+    
+        # writing to csv file 
+        with open(filename, 'w',newline='', encoding='utf-8') as csvfile: 
+            csvwriter = csv.writer(csvfile) 
+        
+            csvwriter.writerow(fields) 
+        
+            csvwriter.writerows(rows)
+        
     def viewEquipment(self):
         EquipmentList=[]
         EquipmentList=self.FEquipmentList.ViewList()
